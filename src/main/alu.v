@@ -3,8 +3,8 @@
 module alu
     #(parameter DATA_WIDTH = 8)
     (  
-    input wire [DATA_WIDTH-1:0] dato_A,
-    input wire [DATA_WIDTH-1:0] dato_B,
+    input wire signed [DATA_WIDTH-1:0] dato_A,
+    input wire signed [DATA_WIDTH-1:0] dato_B,
     input wire [`OP_WIDTH-1:0] op,
     output reg [DATA_WIDTH-1:0] resultado
     );
